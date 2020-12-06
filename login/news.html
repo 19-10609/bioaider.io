@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                    body{
+              font-family: 'Jura', sans-serif;
+            }
+            header{
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              font-weight: bold;
+              font-family: 'Jura', sans-serif;
+            }
+            * { margin:0; }
+            ul, li { list-style:none; }
+            a {
+            color:#fff;
+              text-decoration:underline;
+            }
+            #main_menu{width:auto; float: left; height:100%; position: fixed; background-color: #353183; width: 10%; }
+            #logo{
+              width: 150px;
+              height: auto;
+            }
+            .gnb{padding:0; }
+            .gnb a {width:100%; padding:0;  display:block; text-decoration:none; }
+            .gnb li { position:relative; margin:0; border-bottom: 2px solid black; }
+            .gnb li:first-child{
+              border-left: none;
+            }
+            .gnb li div{
+               height: 150px;
+            }
+            .gnb li ul li:first-child{
+              border-bottom:1px solid #fff;
+            }
+            .gnb li a {  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  height:50px;text-align:center; line-height:50px; font-size:1.5em;  color:white; }
+            .gnb  li  a:hover { color:#FFC700; }
+            .gnb  li  ul { display:none; position:absolute; padding-left: 100%; top: -1px; width: 100%; height: 100%;}
+            .gnb  li:hover ul { display:block; }
+            .gnb li ul a { background-color:#000; color:#fff; text-align:center; line-height:50px; border-bottom:2px solid #fff; }
+            .gnb li ul a:hover { background-color:#555; }
+            .article1 {
+              position: relative;
+              padding-left: 10%;
+              z-index: 0;
+            }
+            .article1 a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #000;
+        }
+        .article1 img{
+            max-width: 80%;
+            max-height: 80%;
+        }
+        .cover {
+            margin-top: 15%;
+            height: 1000px;
+                }
+        .main {
+            height: 700px;
+            position: relative;
+            background-attachment: fixed;
+            background-image: url(main.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 30px;
+        }
+        .text {
+            position: absolute;
+            top: 50%; left: 20%;
+            font-size: 4vw;
+            color: antiquewhite;
+        }
+        .first {
+            float: left;
+            background-repeat: no-repeat;
+            width:30%;
+            padding-right:1%;
+            padding-left: 2%;
+            text-align: center;
+}
+        .second{
+            background-repeat: no-repeat;
+            float: left;
+            width:30%;
+            padding-right:1%;
+            padding-left: 1%;
+            text-align: center;
+}
+        .third{
+            background-repeat: no-repeat;
+            float: left;
+            width:30%;
+            text-align: center;
+}
+.article1 h3 {
+            color: #245a17;
+        }
+        .article1 h4 {
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="article1">
+        <div class="main">
+            <div class="text"> What We do, is changing the world. </div>
+        </div>
+        <h4>REAL-WORLD IMPACT</h4>
+        <p style="text-align: center; font-size: 50px; margin-left: 15%;margin-right: 15%; padding-bottom: 3%;">
+            We work closely with Google and other experts to find ways for our advances to benefit society.
+        </p>
+            <hr align="center" style="border: solid 1px; width: 40%; margin:0 auto;">
+        <p style="text-align: center; font-size: 50px; margin-left: 15%;margin-right: 15%; padding-top: 3%;"> 
+            So far, our systems have shown how they can save energy, identify eye disease, accelerate science, and improve Google products used across the world.
+        </p>
+        <div class="cover">
+         <div class="first">
+            <img src="human-induced-pluripotent-stem-cell-neurons.png" width="100%" height="auto">
+            <h3>In Silico Labeling :  Draw a big difference from a small difference</h3>
+            <p>Computers can find and predict features in unlabeled cell images.
+               It can identify whether a cell is dead or alive and it can also pick out a single dead cell from a large number of cell groups.
+               This allows scientists to find information that is impossible to find or could be a problem.</p> 
+               <a href="https://www.sciencetimes.co.kr/news/ai-딥-러닝으로-생의학-연구-급변/">► FIND OUT MORE</a>
+             </div>   
+         <div class="second">
+             <img src="CRISPR.png" width="100%", height="auto">
+            <h3>DeepBaseEditor : strengthen the influence of genetic scissors</h3>
+            <p>After making various base calibration genetic scissors, big data was built based on each efficiency and frequency of results.</p>
+            <a href="https://www.bioin.or.kr/board.do?cmd=view&bid=tech&num=296820">► FIND OUT MORE</a>
+         </div>
+         <div class="third">
+            <img src="1.4.1_DNA_testing.jpg" width="100%", height="auto">
+            <h3>AI Genome Analysis Solution : Make the impossible possible</h3>
+            <p>By identifying DNA variations, sequencing information, and disease information, patients can receive personalized treatment from rare diseases to chronic diseases such as diabetes and high blood pressure.</p>
+            <a href="http://www.aitimes.kr/news/articleView.html?idxno=12200">► FIND OUT MORE</a>
+         </div>
+        </div>
+    </div>
+    <div>
+        <header>
+          <div id="wrap">
+              <nav>
+                 <div id="main_menu">
+                     <ul class="gnb">
+                       <li><div><a href="../index.html" title="logo"><img src="logo.png" id="logo" alt="logo" ></a></div></li>
+                       <li>
+                         <a title="회사소개">About</a>
+                         <ul>
+                           <li><a href="../about/conviction.html" title="우리의 신념">Conviction</a></li>
+                           <li><a href="../about/direction.html" title="추구하는 방향성">Direction</a></li>
+                           <li><a href="../about/whatdowedo.html" title="하는 일">What We Do</a></li>
+                           <li><a href="../about/ourstory.html" title="회사의 역사">Our story</a></li>
+                         </ul>
+                       </li>
+                       <li>
+                         <a title="회사의 영향">Impact</a>
+                         <ul>
+                           <li><a href="../report/ddd.html" title="회사의 이력">Report</a></li>
+                           <li><a href="../process/eee.html" title="현재 활동중인 활동(모금)">Process</a></li>
+                         </ul>
+                       </li>
+                       <li><a title="채용">Employment</a>
+                         <ul>
+                          <li><a href="../employment/employee.html " title="직원">Employee</a></li>
+                          <li><a href="../employment/researcher.html " title="연구원">Researcher</a></li>
+                         <li><a href="../employment/volunteer.html " title="해외봉사자">Volunteer</a></li></ul>
+                       </li>
+                       <li><a title="블로그">Blog</a>
+                         <ul>
+                            <li><a href="../login/login.html" title="로그인">Log In</a></li>
+                            <li><a href="../login/Signup.html" title="회원가입">Sign Up</a></li>
+                            <li><a href="../login/news.html" title="뉴스">News</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+              </nav>
+             </div>
+        </header>
+      </div>
+
+</body>
+</html>
