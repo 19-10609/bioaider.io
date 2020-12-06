@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+    <title>Homepage|Bioaider</title>
+    <style media="screen">
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            font-weight: bold;
+            font-family: 'Jura', sans-serif;
+        }
+        body{
+          background-repeat: no-repeat;
+          background-size:100%;
+          background-image: url('home2.jpg');
+          background-attachment: fixed;
+          object-fit: fill;
+          padding-top: 75px;
+          font-family: 'Jura', sans-serif;
+        }
+        article{
+          text-align: center;
+          color: white;
+          font-family: 'Jura', sans-serif;
+        }
+        article h1{
+          font-size: 60px;
+        }
+        * { margin:0; }
+        ul, li { list-style:none; }
+        a {
+          color:#fff;
+          text-decoration:underline;
+        }
+        #main_menu{width:auto; float: left; height:100%; position: fixed; background-color: #353183; width: 10%; }
+        .gnb{padding:0; }
+        .gnb a {width:100%; padding:0;  display:block; text-decoration:none; }
+        .gnb li { position:relative; margin:0; border-bottom: 2px solid black; }
+        .gnb li:first-child{
+            border-left: none;
+        }
+        .gnb li div{
+          height: 150px;
+        }
+
+        .gnb li ul li:first-child{
+          border-bottom:1px solid #fff;
+        }
+        
+        .gnb li a {  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  height:50px;text-align:center; line-height:50px; font-size:1.5em;  color:white; }
+        .gnb  li  a:hover { color:#FFC700; }
+        .gnb  li  ul { display:none; position:absolute; padding-left: 100%; top: -1px; width: 100%; height: 100%;}
+        .gnb  li:hover ul { display:block; }
+        .gnb li ul a { background-color:#000; color:#fff; text-align:center; line-height:50px; border-bottom:2px solid #fff; }
+        .gnb li ul a:hover { background-color:#555; }
+        #logo{
+          width: 150px;
+          height: auto;
+        }
+        #logo1{
+          width: 200px;
+          height: auto;
+        }
+        #name{
+          font-size: 2em;
+          text-decoration: none;
+        }
+        .tofindout{
+          background-color: #353183; width: 200px; height: 40px; margin:0 auto; text-align: center; line-height: 40px; border-radius: 15px; margin-bottom:40%;
+        }
+        .tofindout a{
+          text-decoration: none;
+          font-size: 20px;
+        }
+        .Homep{
+          margin:0 auto;
+          color: black;
+          background-color: #B2BAAD;
+          height: 600px;
+          color: white;
+          font-size: 30px;
+
+        }
+        #p0{
+          position: relative;
+          left: 33%;
+          width: fit-content;
+        }
+        #p1{
+          position: relative;
+          left: 28%;
+          width: fit-content;
+        }
+        #logo3{
+          width: 100px;
+          height: auto;
+          
+        }
+        #tp{
+          font-size: 20px;
+          line-height: 70px;
+        }
+        </style>
+</head>
+<body>
+    <header>
+      <div id="wrap">
+          <nav>
+             <div id="main_menu">
+                 <ul class="gnb">
+                   <li><div><a href=".//index.html" title="logo"><img src="logo.png" id="logo" alt="logo" ></a></div></li>
+                   <li>
+                     <a title="회사소개">About</a>
+                     <ul>
+                      <li><a href=".//about/conviction.html" title="우리의 신념">Conviction</a></li>
+                      <li><a href=".//about/direction.html" title="추구하는 방향성">Direction</a></li>
+                      <li><a href=".//about/whatdowedo.html" title="하는 일">What We Do</a></li>
+                      <li><a href=".//about/ourstory.html" title="회사의 역사">Our story</a></li>
+                     </ul>
+                   </li>
+                   <li>
+                     <a title="회사의 영향">Impact</a>
+                     <ul>
+                       <li><a href=".//report/ddd.html" title="회사의 이력">Report</a></li>
+                       <li><a href=".//process/eee.html" title="현재 활동중인 활동(모금)">Process</a></li>
+                     </ul>
+                   </li>
+                   <li><a title="채용">Employment</a>
+                     <ul>
+                      <li><a href=".//employment/employee.html " title="직원">Employee</a></li>
+                      <li><a href=".//employment/researcher.html " title="연구원">Researcher</a></li>
+                     <li><a href=".//employment/volunteer.html" title="해외봉사자">Volunteer</a></li></ul>
+                   </li>
+                   <li><a title="블로그">Blog</a>
+                     <ul>
+                        <li><a href=".//login/login.html" title="로그인">Log In</a></li>
+                        <li><a href=".//login/Signup.html" title="회원가입">Sign Up</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+          </nav>
+         </div>
+    </header>
+    <article>
+        <div id="p0">
+          <a href=".//index.html" id="name"><img src="bioaider.png" id="logo1" alt="bioaider"></a>
+          <p><h1><p>What can we do to solve</p><p>global health problem?</p></h1></p><br>
+          <p><div class="tofindout"><a href=".//about/conviction.html">To find out more</a></div></p>
+        </div>
+        <div class="Homep">
+          <div id="p1">
+            <br>
+            <p>We research and try to figure out our biggest health problem.</p>
+            <p>Our goal is not just confined at developing future technology,</p>
+            <p>but by helping people who need our help we are</p>
+            <p>engaging in increasing global welfare.</p>
+            <pre>
+              <hr align="center" style="margin:auto; width:70%; border: groove 5px;">
+
+
+
+
+
+
+
+            </pre>
+          </div>
+          <hr style="width:100%">
+          <div id="tp0">
+            <p id="tp">
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              For further service information or service subscription, contact call center at 080-1234-098.
+              <a href=".//index.html"><img src="bioaider.png" alt="bioaider" id="logo3"></a>
+            </p>
+          </div>
+        </div>
+    </article>
+</body>
+</html>

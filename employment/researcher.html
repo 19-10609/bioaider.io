@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+  <title>Researcher</title>
+  <style>
+    body {
+      font-family: 'Jura', sans-serif;
+      background-image: url(researchers.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    .menu>header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      font-weight: bold;
+      font-family: 'Jura', sans-serif;
+    }
+
+    * {
+      margin: 0;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    #main_menu {
+      width: auto;
+      float: left;
+      height: 100%;
+      position: fixed;
+      background-color: #353183;
+      width: 10%;
+    }
+
+    #logo {
+      width: 150px;
+      height: auto;
+    }
+
+    .gnb {
+      padding: 0;
+    }
+
+    .gnb a {
+      width: 100%;
+      padding: 0;
+      display: block;
+      text-decoration: none;
+    }
+
+    .gnb li {
+      position: relative;
+      margin: 0;
+      border-bottom: 2px solid black;
+    }
+
+    .gnb li:first-child {
+      border-left: none;
+    }
+
+    .gnb li div {
+      height: 150px;
+    }
+
+    .gnb li ul li:first-child {
+      border-bottom: 1px solid #fff;
+    }
+
+    .gnb li a {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .gnb li a:hover {
+      color: #FFC700;
+    }
+
+    .gnb li ul {
+      display: none;
+      position: absolute;
+      padding-left: 100%;
+      top: -1px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .gnb li:hover ul {
+      display: block;
+    }
+
+    .gnb li ul a {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      line-height: 50px;
+      border-bottom: 2px solid #fff;
+    }
+
+    .gnb li ul a:hover {
+      background-color: #555;
+    }
+
+    .article1 {
+      position: relative;
+      padding-left: 10%;
+      z-index: 0;
+      border-left: black solid 1px;
+    }
+
+    .process>div {
+      padding-right: 3%;
+    }
+
+    .pd div:hover div {
+      border: #2a7092 solid 5px
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 900;
+    }
+
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      position: fixed;
+      width: 60%;
+      padding: 10px;
+      max-width: 500px;
+      border-radius: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, .9);
+      -webkit-transition: opacity .5s, visibility 0s linear .5s;
+      transition: opacity .5s, visibility 0s linear .5s;
+      z-index: 1;
+    }
+
+    .popup:target {
+      visibility: visible;
+      opacity: 1;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+    }
+
+    .popup-close {
+      position: absolute;
+      padding: 10px;
+      max-width: 500px;
+      border-radius: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, .9);
+    }
+
+    .popup .close {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      padding: 5px;
+      color: #000;
+      transition: color .3s;
+      font-size: 2em;
+      line-height: .6em;
+      font-weight: bold;
+    }
+
+    .popup .close:hover {
+      color: #00E5EE;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="article1">
+    <div class="hd1">
+    </div>
+    <div>
+      <div id="title" style="background-color: none; padding-top: 3%; padding-bottom: 7%;">
+        <a href="../employment/researcher.html" style="font-size: 100px; color:#0c97dd; font-weight: bold; text-decoration: none;">Researcher</a><b style="font-size: 30px;">_employment</b>
+      </div>
+      <div class="article2" style="background-color: white;  text-align: center; border-top: #2a7092 double 5px;">
+        <p style="color: #2a7092; font-size: 45px; font-weight: bold; padding: 5% 0%">Recruiting Process</p>
+
+
+        <div class="process" style="background-color: white; max-height: 10%;">
+          <div style="float: left; width: 15%; height: 10%; padding: 0% 2.5%;">
+            <img src="2.jpg" alt="">
+            <b style="color:#2a7092 ; font-size: 20px; ">Submitting application</b>
+            <p>Online application only</p>
+          </div>
+          <div style="float: left; width: 15%; height: 10%;  padding: 0% 2.5%;">
+            <img src="3.jpg" alt="">
+            <b style="color:#2a7092 ;font-size: 20px;">Application screening</b>
+            <p>Qualified individuals move on to interviews</p>
+          </div>
+          <div style="float: left; width: 15%; height: 10%; padding: 0% 2.5%;">
+            <img src="4.jpg" alt="">
+            <b style="color:#2a7092 ;font-size: 20px;">Interview</b>
+            <p>Technical interviews and personality interviews with executives* Interviews may be conducted in English or non-Korean languages for positions requiring language skills.</p>
+          </div>
+          <div style="float: left; width: 15%; height: 10%; padding: 0% 2.5%;">
+            <img src="5.jpg" alt="">
+            <b style="color:#2a7092 ;font-size: 20px;">Medical check</b>
+            <p>Conducted by designated hospitals</p>
+          </div>
+          <div style="float: left; width: 15%; height: 10%; padding: 0% 2.5%;">
+            <img src="6.jpg" alt="">
+            <b style="color:#2a7092 ;font-size: 20px;">Employment</b>
+          </div>
+        </div>
+        <hr style="margin-top: 25%;">
+        <div style="margin-top:  5%;">
+          <header>
+            <p style="font-size: 50px; color: #2a7092; text-align: center; font-weight: bold; ">Job Information</p>
+          </header>
+          <div class="pd">
+            <p style="color: black; padding: 3%; padding-left: 10%; text-align: left; font-size: 40px; margin-left: 5%;">
+              <b style="text-decoration: underline;">RD</b>
+            </p>
+            <div style=" background-color: white; height: 300px; ">
+              <a href="#pop01">
+                <div class="popup_btn" style="border-radius: 5%; border: #2a7092 solid 2px; background-image:url(j1_1.jpg); background-repeat: no-repeat; background-size: cover; float: left; width: 320px; height: 240px; margin-left: 15%; ">
+                </div>
+              </a>
+              <a href="#pop02">
+                <div class="popup_btn" style="border-radius: 5%; border: #2a7092 solid 2px; background-image:url(j1_2.jpg); background-repeat: no-repeat; background-size: cover;  float: left; width: 320px; height: 240px; position: relative; margin-left: 30px;">
+                </div>
+              </a>
+              <a href="#pop03">
+                <div class="popup_btn" style="border-radius: 5%; border: #2a7092 solid 2px; background-image:url(j1_3.jpg); background-repeat: no-repeat; background-size: cover;float: left;width: 320px; height: 240px;margin-left: 30px; ">
+                </div>
+              </a>
+            </div>
+
+          </div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+        </div>
+        <div style="margin-top:  5%;">
+          <div class="pd">
+            <p style="color: black; padding: 3%; padding-left: 10%; text-align: left; font-size: 40px; margin-left: 5%;">
+              <b style="text-decoration: underline;">Production</b>
+            </p>
+            <div style=" background-color: white; height: 300px; ">
+              <a href="#pop04">
+                <div style="border-radius: 5%; border: #2a7092 solid 2px; background-image:url(j2_1.jpg); background-repeat: no-repeat; background-size: cover; float: left; width: 320px; height: 240px; margin-left: 15%; ">
+                </div>
+              </a>
+              <a href="#pop05">
+                <div style="border-radius: 5%; border: #2a7092 solid 2px; background-image:url(j2_2.jpg); background-repeat: no-repeat; background-size: cover;  float: left; width: 320px; height: 240px; position: relative; margin-left: 30px;">
+                </div>
+              </a>
+              <a href="#pop05">
+                <div style="border-radius: 5%; border: #2a7092 solid 2px; background-image:url(j2_3.jpg); background-repeat: no-repeat; background-size: cover;float: left;width: 320px; height: 240px;margin-left: 30px; ">
+                </div>
+              </a>
+            </div>
+
+          </div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div style="background-color: white;">
+        <p style="color: #2a7092; text-align: center; padding-top: 3%; font-size: 20px; font-weight: bold;">Recruitment inquiries</p>
+        <p style="text-align: center;"><b>Tel :</b>+82-32-850-5226</p>
+        <p style="text-align: center; padding-bottom: 3%;"><b>E-mail : </b>recruit@celltrion.com</p>
+      </div>
+
+    </div>
+  </div>
+  <div id="pop01" class="overlay">
+    <div class="popup">
+      <a href="#none" class="close">&times;</a>
+      <h4>Biopharmaceutical Development</h4>
+      <br>
+      <p>-Improve yield rates of stem cells; develop and apply platform stem cell technologies</p>
+      <br>
+      <p>-Optimize culture process for mass production; oversee technology transfer</p>
+      <br>
+      <p>-Develop analysis methods; conduct clinical analysis (K and immunogenicity analysis method development and CRO management)</p>
+      <br>
+      <p>-Evaluate conformity and equivalence; identify and analyze product characteristics; prepare approval documents</p>
+      <br>
+      <p>-Plan, manage, and conduct animal tests and toxicity tests for new drugs, biosimilars, and cosmetic ingredients</p>
+      <br>
+      <p>-Secure platform technologies; develop and adopt animal testing models for flagship new drugs</p>
+    </div>
+  </div>
+  <div id="pop02" class="overlay">
+    <div class="popup">
+      <a href="#none" class="close">&times;</a>
+      <h4>Research Management</h4>
+      <br>
+      <p>-Establish, plan, and manage R&D strategies</p>
+      <br>
+      <p>-Manage development progress; evaluate development feasibility</p>
+    </div>
+  </div>
+  <div id="pop03" class="overlay">
+    <div class="popup">
+      <a href="#none" class="close">&times;</a>
+      <h4>RA</h4>
+      <br>
+      <p>-Establish approval strategies for biopharmaceuticals <br>(biosimilars ∙ new antibodies); negotiate with regulators</p>
+      <br>
+      <p>-Manage and update national regulatory requirements and guidelines; register products and conduct follow-up management (change control)</p>
+    </div>
+  </div>
+  <div id="pop04" class="overlay">
+    <div class="popup">
+      <a href="#none" class="close">&times;</a>
+      <h4>Drug Substance (DS)<br>Drug Product (DP)</h4>
+      <br>
+      <p>-Manage biopharmaceutical production processes</p>
+      <br>
+      <p>-Handle production issue troubleshooting; improve production practices</p>
+      <br>
+      <p>-Handle good management practice (GMP) documents</p>
+      <br>
+      <p>-Manage production processes; provide technical support for process validation; analyze validation results</p>
+      <br>
+      <p>-Oversee technology transfers and operate pilot labs</p>
+      <br>
+      <p>-Evaluate the conformity of GMP, lab equipment, and facilities</p>
+    </div>
+  </div>
+  <div id="pop05" class="overlay">
+    <div class="popup">
+      <a href="#none" class="close">&times;</a>
+      <h4>Global Operation</h4>
+      <br>
+      <p>-Manage production processes; provide technical support for process validation; analyze validation results</p>
+      <br>
+      <p>-Oversee technology transfers (DS ∙ DP ∙ CMO) and operate pilot labs</p>
+      <br>
+      <p>-Conduct process ∙ quality monitoring; identify risks; carry out improvements</p>
+      <br>
+      <p>-Manage DS, DP, and packaging CMO contracts and networks</p>
+      <br>
+      <p>-Operate and manage CMO manufacturing sites; analyze process data trends</p>
+      <br>
+      <p>Plan long ∙ medium-term production ∙ supply; monitor plant operation</p>
+    </div>
+  </div>
+  <div id="pop06" class="overlay">
+    <div class="popup">
+      <a href="#none" class="close">&times;</a>
+      <h4>Logistics</h4>
+      <br>
+      <p>-Forecast and manage ingredient inventory</p>
+      <br>
+      <p>-Manage CMO supply and procurement</p>
+      <br>
+      <p>-Manage the inventory of active pharmaceutical ingredients (APIs) and finished products</p>
+      <br>
+      <p>-Manage international transportation ∙ customs clearance; handle cold chains and authorized economic operators (AEOs)</p>
+    </div>
+  </div>
+
+
+  <div class="menu">
+    <header>
+      <div id="wrap">
+        <nav>
+          <div id="main_menu">
+            <ul class="gnb">
+              <li>
+                <div><a href="../index.html" title="logo"><img src="logo.png" id="logo" alt="logo"></a></div>
+              </li>
+              <li>
+                <a title="회사소개">About</a>
+                <ul>
+                  <li><a href="../about/conviction.html" title="우리의 신념">Conviction</a></li>
+                  <li><a href="../about/direction.html" title="추구하는 방향성">Direction</a></li>
+                  <li><a href="../about/whatdowedo.html" title="하는 일">What We Do</a></li>
+                  <li><a href="../about/ourstory.html" title="회사의 역사">Our story</a></li>
+                </ul>
+              </li>
+              <li>
+                <a title="회사의 영향">Impact</a>
+                <ul>
+                  <li><a href="../report/ddd.html" title="회사의 이력">Report</a></li>
+                  <li><a href="../process/eee.html" title="현재 활동중인 활동(모금)">Process</a></li>
+                </ul>
+              </li>
+              <li><a title="채용">Employment</a>
+                <ul>
+                  <li><a href="../employment/employee.html " title="직원">Employee</a></li>
+                  <li><a href="../employment/researcher.html " title="연구원">Researcher</a></li>
+                  <li><a href="../employment/volunteer.html " title="해외봉사자">Volunteer</a></li>
+                </ul>
+              </li>
+              <li><a title="블로그">Blog</a>
+                <ul>
+                  <li><a href="../login/login.html" title="로그인">Log In</a></li>
+                  <li><a href="../login/Signup.html" title="회원가입">Sign Up</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+</body>
+
+</html>
